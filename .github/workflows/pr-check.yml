@@ -1,0 +1,15 @@
+name: PR Check
+
+on:
+  pull_request:
+    branches:
+      - staging
+
+jobs:
+  pr-check:
+    name: pr-check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: step 1
+        run: echo "step 1"
